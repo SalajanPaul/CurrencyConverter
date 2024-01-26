@@ -5,7 +5,6 @@ c = CurrencyConverter()
 
 class Converter:
     def __init__(self):
-        self.money = None
         self.root = tk.Tk()
 
         self.convert_button = tk.Button(self.root, text="Convert", font=("Arial", 16),command=self.exchange)
