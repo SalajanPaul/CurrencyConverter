@@ -1,18 +1,19 @@
 from currency_converter import CurrencyConverter
 from datetime import date
 import tkinter as tk
+c = CurrencyConverter()
 
+class Converter:
+    def __init__(self):
+        self.money = None
+        self.root = tk.Tk()
 
-root = tk.Tk()
-root.geometry("500x500")
-root.title("Currency converter")
-root.mainloop()
+        self.convert_button = tk.Button(self.root, text="Convert", font=("Arial", 16),command=self.exchange)
+        self.convert_button.pack(padx=10, pady=10)
 
+        self.root.mainloop()
 
-# c = CurrencyConverter()
-#
-# print(c.convert(100, "EUR", "RON", date=date(2024, 1, 2)))
+    def exchange(self):
+        print(c.convert(100, "RON", "EUR"))
 
-
-
-
+Converter()
