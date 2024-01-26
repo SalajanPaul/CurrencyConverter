@@ -14,7 +14,7 @@ class Converter:
         self.root.mainloop()
 
     def exchange(self):
-        print(c.convert(100, "RON", "EUR"))
+        print(c.convert(100, "RON", "EUR", date=date(2024, 1, 2)))
 
 Converter()
 
