@@ -17,3 +17,4 @@ class Converter:
         print(c.convert(100, "RON", "EUR"))
 
 Converter()
+
