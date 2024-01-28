@@ -1,3 +1,4 @@
+from tkinter import messagebox
 from currency_converter import CurrencyConverter
 from datetime import date
 import tkinter as tk
@@ -20,6 +21,10 @@ class Converter:
         result = c.convert(100, "RON", "EUR", date=date(2024, 1, 2))
         result_round = round(result)
         self.result_label.config(text=f"{result_round}")
+
+    def close_app(self):
+        if messagebox.askyesno(title="Quit", message="Do you really want to quit?"):
+            self.root.destroy()
 
 
 Converter()
