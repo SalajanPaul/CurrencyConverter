@@ -15,6 +15,8 @@ class Converter:
         self.result_label = tk.Label(self.root, text="", font=("Arial", 16))
         self.result_label.pack(pady=50, padx=150)
 
+        self.root.protocol("WM_DELETE_WINDOW", self.close_app)
+
         self.root.mainloop()
 
     def exchange(self):
