@@ -29,7 +29,5 @@ class Converter:
             self.root.destroy()
 
 
-
-
 Converter()
 
